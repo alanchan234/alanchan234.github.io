@@ -89,42 +89,40 @@ nav a {
   text-align: center;
 }
 .review-card {
-  max-width: 700px;
-  margin: 1.5rem auto;
+  display: flex;
+  align-items: center;
   background: #fff;
   border-radius: 12px;
   padding: 1rem 1.5rem;
+  max-width: 600px;
+  margin: 1.5rem auto;
   box-shadow: 0 2px 10px rgba(0,0,0,0.06);
-  border: 1px solid #d8d8d8;
+  border: 1px solid #e6e6e6;
   text-align: left;
-  font-size: 0.95rem;
-  position: relative;
 }
-.review-card h3 {
+.review-card img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+.review-text {
+  flex: 1;
+}
+.review-text h3 {
   font-size: 1rem;
-  font-weight: 700;
-  color: #2c2c2c;
-  margin-bottom: 0.3rem;
+  font-weight: 600;
+  margin: 0;
+  color: #222;
 }
-.review-card::before {
-  content: '⬆️ 243';
-  position: absolute;
-  left: -60px;
-  top: 1rem;
-  font-size: 0.85rem;
-  color: #555;
-  background: #f2f2f2;
-  border-radius: 6px;
-  padding: 0.2rem 0.5rem;
+.review-text p {
+  margin: 0.25rem 0 0.5rem;
+  color: #444;
+  font-size: 0.95rem;
 }
-.review-card + .review-card::before {
-  content: '⬆️ 198';
-}
-.review-card + .review-card + .review-card::before {
-  content: '⬆️ 157';
-}
-.review-card + .review-card + .review-card + .review-card::before {
-  content: '⬆️ 312';
+.review-date {
+  font-size: 0.8rem;
+  color: #aaa;
 }
 footer {
   text-align: center;
